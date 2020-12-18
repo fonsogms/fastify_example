@@ -10,6 +10,9 @@ const axios = require("axios");
 //   .catch((err) => console.log(err));
 
 axios
-  .post("http://localhost:3000/cheese/roquefort", { a: 2 })
+  .post("http://localhost:3000/cheese/roquefort", {
+    a: 2,
+    b: "hola",
+  })
   .then((res) => console.log(res.data))
   .catch((err) => console.log(err));
