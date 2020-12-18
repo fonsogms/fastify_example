@@ -13,6 +13,7 @@ axios
   .post("http://localhost:3000/cheese/roquefort", {
     a: 2,
     b: "hola",
+    c: [1, 2, 3],
   })
   .then((res) => console.log(res.data))
   .catch((err) => console.log(err));
